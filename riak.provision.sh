@@ -14,3 +14,6 @@ tar zxvf otp_src_R16B02-basho10.tar.gz
 cd OTP_R16B02_basho10
 ./otp_build autoconf
 ./configure && make && sudo make install
+
+curl -s https://packagecloud.io/install/repositories/basho/riak/script.rpm.sh | sudo bash
+yum install riak-2.2.0-1.el7.centos.x86_64 -y
